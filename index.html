@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>làm quen với web</title>
+</head>
+
+<body>
+    ES6 - Tagged template literals
+</body>
+<script>
+    function highlight([first,...string],...value) {
+        return value.reduce ( 
+        (acc,curr) => [...acc,`<span>${curr}</span>`, string.shift()],[first]
+            ).join('');
+            
+    }
+
+    var brand = 'F8';
+    var course = 'Javascript';
+    const html = highlight`Học lập trình ${course} tại ${brand} !`
+    console.log(html);
+</script>
+</html>

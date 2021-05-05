@@ -1,0 +1,38 @@
+
+/* .nav{
+    background: rgb(34, 1, 71);
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.fa{
+    color: rgb(239, 234, 245);
+    transform: translateY(-20%);
+    display: grid;
+    place-items: center;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-calc{
+    width: 40px;
+    height: 40px;
+    background:rgb(34, 1, 71) ;
+    border-radius: 50%;
+    position: absolute;
+    top:-20px;
+    left: calc(300px - 170px);
+    transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+.menu > a {
+    list-style: none;
+    color: rgb(42, 10, 129);
+}
+.menu-list{
+    display: none;
+}
+.menu:hover .menu-list{
+    display: block;
+}

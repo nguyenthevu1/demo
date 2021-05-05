@@ -1,0 +1,240 @@
+.form-element{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: black;
+    z-index: 10000;
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all .7s;
+}
+.form{
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    width: 500px;
+    height: 550px;
+    background-color: aliceblue;
+    border: 1px solid rgba(44, 43, 43,.2);
+    border-radius: 20px;
+}
+.form-element:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.form .mk{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    /* top: 169px; */
+    left: 90px;
+}
+.form .mk p{
+    font-size: 90%;
+}
+.form .mk p a{
+    text-decoration: none;
+}
+.heading-form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.heading-form h3{
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+#form-sign{
+    border-bottom: 2px solid rgb(30,156,241);
+}
+#form-sign.active{
+    border-bottom: 2px solid transparent;
+}
+#create{
+    border-bottom: 2px solid transparent;
+}
+#create.active{
+    border-bottom: 2px solid rgb(30,156,241);
+}
+.form-close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+.form__group{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form__group >div{
+    display: flex;
+}
+.form__group span{
+    width: 80%;
+    float: right;
+    font-size: 80%;
+    color: red;
+}
+.form__group input{
+    display: block;
+    height: 35px;
+    width: 357px;
+    outline: none;
+    border: 1px solid rgb(133, 132, 132);
+}
+.form__group.button{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    /* text-align: end; */
+    /* top: 100px; */
+}
+.form__group.button button{
+    position:relative;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.form__group.button button:hover{
+    opacity: .8;
+}
+.form__group.button button:nth-child(1){
+    background-color: rgb(253,216,53);
+    color: black;
+    display: block;
+    height: 40px;
+}
+.form__group.button button:nth-child(2){
+    background-color: rgb(59,89,152);
+}
+.form__group.button button:nth-child(3){
+    background-color: #b82828;;
+}
+.form__group.button button i{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    width: 105px;
+    height: 100%;
+    padding-left: 10px;
+}
+.group{
+    position: relative;
+    top: 0;
+    left: 25px;
+    width: 90%;
+    /* justify-content: center; */
+}
+
+.form__label{
+    display: block;
+    width: 90px;
+}
+#form-2{
+    position: absolute;
+    width: 90%;
+    left: 25px;
+    display: none;
+    /* top: 15%;
+    left: 30%; */
+}
+.form__group.radio{
+    width: 100%;
+}
+.form__group.radio span{
+    /* display: block; */
+    padding: 10px 10px 10px 0;
+    width: 90px;
+}
+.form__group.radio .form-radio{
+    padding: 13px 10px 10px 5px;
+}
+.gender{
+    display: flex;
+    margin-left: -5px;
+    width: 150px;
+}
+.gender input{
+    width: 25px;
+    padding: 10px;
+}
+#form-2 p{
+    width: 90px;
+    height: 35px;
+    margin: 0;
+}
+#form-2 .form__group.date span{
+    width: 105px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    box-shadow: 0 0 5px rgba(107, 107, 107,.2);
+    cursor: pointer;
+}#form-2 .form__group.date span:not(:first-child){
+    margin-left: 10px;
+}
+.form__group.check{
+    position: relative;
+    width: 80%;
+    left: 90px;
+}
+.form__group.check .checked{
+    font-size: 84%;
+}
+.form__group.check #form-check{
+    width: 20px;
+    margin: 0;
+    margin-top: -9px;
+}
+ #form-2 .form__group.button-2{
+    
+     position: relative;
+     /* bottom: 0; */
+     width: 100%;
+     height: 40px;
+     text-align: center;
+}
+#form-2 .form__group.button-2 button{
+    background-color: rgb(253,216,53);
+    color: black;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 90px;
+}
